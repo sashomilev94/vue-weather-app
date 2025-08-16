@@ -1,5 +1,17 @@
-# Vue 3 + Vite
+# Vue Weather App 🌦️
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+- A simple weather forecast app built with **Vue 3** + **Vite** + **TailwindCSS**, using the [OpenWeatherMap API](https://openweathermap.org/).
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## 🚀 Tech Stack
+- [Vue 3](https://vuejs.org/) with `<script setup>`
+- [Vite](https://vitejs.dev/) for fast builds
+- [TailwindCSS](https://tailwindcss.com/) for styling
+- [Axios](https://axios-http.com/) for API calls
+
+## 🛠️ Setup
+- git clone <your-repo-url>
+- cd vue-weather-app
+- npm install
+- Create a .env file in the project root
+	Add your API key as following ( "VITE_WEATHER_API_KEY=your_openweathermap_api_key_here" ) // Important NOTE - your key must start with VITE_ because otherwise it is not recognised by vite.
+- npm run dev 
