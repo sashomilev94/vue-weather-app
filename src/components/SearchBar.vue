@@ -2,8 +2,18 @@
 	import { ref } from 'vue'
 
 	const searchTerm = ref('')
+		
+	/**
+	 * Declare custom event that parent can listen to
+	 */
 	const emit = defineEmits(['search'])
 
+	/**
+	 * Emit search event if input is not empty
+	 * - Trims whitespace
+	 * - Sends the search term to parent
+	 * - Clears input after submission
+	 */
 	const handleSearch = () => {
 		if (searchTerm.value.trim()) {
 			emit('search', searchTerm.value.trim())
