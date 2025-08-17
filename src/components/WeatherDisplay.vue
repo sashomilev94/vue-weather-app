@@ -7,7 +7,7 @@
 		'forecast',
 		'loading',
 		'error',
-	]);
+	])
 </script>
 
 <template>
@@ -30,7 +30,7 @@
 			:icon="weather.weather[0].icon"
 		/>
   
-		<div v-if="forecast.length" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-6">
+		<div v-if="forecast.length">
 			<ForecastDay
 				v-for="day in forecast"
 				:key="day.date"

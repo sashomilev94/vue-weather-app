@@ -31,7 +31,7 @@
 			placeholder="Search city..."
 			class="flex-1 p-2 border rounded"
 		/>
-		<button @click="handleSearch" class="bg-blue-700 text-white font-bold px-4 py-2 rounded">
+		<button @click="handleSearch" class="bg-blue-700/50 text-white font-bold px-4 py-2 rounded">
 			Search
 		</button>
 	</div>
