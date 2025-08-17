@@ -39,7 +39,6 @@ export function useWeather() {
 
 			weather.value = currentWeatherData;
 			forecast.value = getForecastChunk(forecastData.list);
-			console.log(forecastData.list)
 		} catch (err) {
 			if (err.response) {
 				const messages = {
